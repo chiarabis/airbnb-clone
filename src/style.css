@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Norican';
+    src: url('./fonts/Norican/Norican-Regular.ttf'), format('ttf');
+}
+@font-face {
+    font-family: 'Garet';
+    src: url('./fonts/garet/Garet-Book.ttf'), format('ttf');
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+nav{
+    width: 100%;
+    height: 110px;
+    box-shadow: 0px 0px 10px rgb(156, 156, 136);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 50px;
+    align-items: center;
+}
+.nav-icon{
+    width: auto;
+    height: 50%;
+}
+.nav-logo-text{
+    padding: 30px;
+    font-family: 'Norican';
+    font-size: 2rem;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-block{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 10px;
+    width: 80%;
+    place-items: center;
+    padding: 30px 0;
+}
+.grid-block img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.intro{
+    font-family: 'Garet';
+    width: 80%;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+.cards-container{
+    font-family: 'Garet';
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    overflow-x: scroll;
+}
+.card{
+    width: 350px;
+    margin: 20px;
+    height: auto;
+}
+.card-image{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+.card-stats{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.card-stats :nth-child(3){
+    padding-right: 5px;
+}
+.card-star{
+    height: 25px;
+    padding-right: 5px;
+}
+.gray{
+    color: #5c5c5c;
+}
+.bold{
+    font-weight: 600;
+}
