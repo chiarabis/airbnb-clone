@@ -9,18 +9,23 @@ export default function App(){
         return (
             <Card
             key={item.id}
+            item={item}
+            />
+            /*<Card
+            key={item.id}
             img={item.coverImg}
             rating={item.stats.rating}
             reviewCount={item.stats.reviewCount}
-            country={item.location}
+            location={item.location}
             title={item.title}
             price={item.price}
-            />
+            openSpots={item.openSpots}
+            />*/
         )
     })
 
     return (
-        <div>
+        <div className='container'>
             <Navbar />
             <Intro />
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../images/spiral.png'
+import Logo from '../spiral.png'
 
 export default function Navbar(){
     return (
